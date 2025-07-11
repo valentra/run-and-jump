@@ -5,3 +5,5 @@ export_presets.cfg
 *.import
 *.tmp
 *.log
+*.exe
+*.exe
