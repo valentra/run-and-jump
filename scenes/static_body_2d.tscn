@@ -1,0 +1,151 @@
+[gd_scene load_steps=17 format=3 uid="uid://csop5lci0abog"]
+
+[ext_resource type="Script" path="res://scripts/static_body_2d.gd" id="1_ptw3o"]
+[ext_resource type="Texture2D" uid="uid://b7kmxxhm4mphb" path="res://assets/Checkpoint (Flag Idle)(64x64).png" id="1_uk2n1"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lnblw"]
+atlas = ExtResource("1_uk2n1")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wdvy3"]
+atlas = ExtResource("1_uk2n1")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o5lg7"]
+atlas = ExtResource("1_uk2n1")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_auqsm"]
+atlas = ExtResource("1_uk2n1")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mrjhs"]
+atlas = ExtResource("1_uk2n1")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pmx82"]
+atlas = ExtResource("1_uk2n1")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e7s5j"]
+atlas = ExtResource("1_uk2n1")
+region = Rect2(384, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lkte3"]
+atlas = ExtResource("1_uk2n1")
+region = Rect2(448, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gb5hj"]
+atlas = ExtResource("1_uk2n1")
+region = Rect2(512, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0ws7e"]
+atlas = ExtResource("1_uk2n1")
+region = Rect2(576, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qkanf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lnblw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wdvy3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o5lg7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_auqsm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mrjhs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pmx82")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e7s5j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lkte3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gb5hj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0ws7e")
+}],
+"loop": true,
+"name": &"default",
+"speed": 15.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1mcl0"]
+size = Vector2(18, 10)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yj2yv"]
+size = Vector2(64, 78)
+
+[sub_resource type="FontFile" id="FontFile_0wl4b"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
+cache/0/24/0/ascent = 0.0
+cache/0/24/0/descent = 0.0
+cache/0/24/0/underline_position = 0.0
+cache/0/24/0/underline_thickness = 0.0
+cache/0/24/0/scale = 1.0
+cache/0/24/0/kerning_overrides/24/0 = Vector2(0, 0)
+cache/0/24/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/24/0/kerning_overrides/20/0 = Vector2(0, 0)
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/24/0 = Vector2(0, 0)
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/16/0/kerning_overrides/20/0 = Vector2(0, 0)
+cache/0/20/0/ascent = 0.0
+cache/0/20/0/descent = 0.0
+cache/0/20/0/underline_position = 0.0
+cache/0/20/0/underline_thickness = 0.0
+cache/0/20/0/scale = 1.0
+cache/0/20/0/kerning_overrides/24/0 = Vector2(0, 0)
+cache/0/20/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/20/0/kerning_overrides/20/0 = Vector2(0, 0)
+
+[node name="checkpoint" type="StaticBody2D"]
+script = ExtResource("1_ptw3o")
+
+[node name="Sprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_qkanf")
+autoplay = "default"
+frame = 9
+frame_progress = 1.0
+speed_scale = 1.5
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-17, 59)
+shape = SubResource("RectangleShape2D_1mcl0")
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(4, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(5, 24)
+shape = SubResource("RectangleShape2D_yj2yv")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -60.0
+offset_top = -53.0
+offset_right = 73.0
+offset_bottom = -20.0
+theme_type_variation = &"HeaderSmall"
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("FontFile_0wl4b")
+text = "press[e]to exit"
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

@@ -1,0 +1,146 @@
+[gd_scene load_steps=12 format=3 uid="uid://dokwgltudxcgv"]
+
+[ext_resource type="Script" path="res://scripts/main_menu.gd" id="1_ku4g7"]
+[ext_resource type="Texture2D" uid="uid://ba7xuwu0r6ah3" path="res://assets/Green.png" id="1_uv5ep"]
+[ext_resource type="FontFile" uid="uid://m0psnb8l17vf" path="res://assets/Orange Gummy.ttf" id="2_nx5yo"]
+
+[sub_resource type="Theme" id="Theme_dpge2"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nsoce"]
+bg_color = Color(1, 0.321709, 0.418065, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+shadow_size = 3
+shadow_offset = Vector2(2, 3)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qcb1q"]
+bg_color = Color(1, 0.321569, 0.419608, 0.831373)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+shadow_size = 3
+shadow_offset = Vector2(2, 3)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r5yi8"]
+bg_color = Color(0.603481, 0, 0.177778, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+shadow_size = 3
+shadow_offset = Vector2(2, 3)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8pbs4"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_78rqu"]
+bg_color = Color(1, 0.321569, 0.419608, 0.831373)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+shadow_size = 3
+shadow_offset = Vector2(2, 3)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5wbha"]
+bg_color = Color(0.603481, 0, 0.177778, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+shadow_size = 3
+shadow_offset = Vector2(2, 3)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5kqlt"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ku4g7")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_uv5ep")
+stretch_mode = 1
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -287.0
+offset_top = -203.0
+offset_right = 296.0
+offset_bottom = -101.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 0.321709, 0.418065, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 5
+theme_override_constants/shadow_outline_size = 2
+theme_override_constants/line_spacing = 2
+theme_override_fonts/font = ExtResource("2_nx5yo")
+theme_override_font_sizes/font_size = 100
+text = "main menu"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -192.0
+offset_top = -31.0
+offset_right = 188.0
+offset_bottom = 201.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 21
+
+[node name="Button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme = SubResource("Theme_dpge2")
+theme_type_variation = &"FlatButton"
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_nsoce")
+theme_override_styles/hover = SubResource("StyleBoxFlat_qcb1q")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_r5yi8")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_8pbs4")
+text = "start game"
+
+[node name="exit" type="Button" parent="VBoxContainer"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+size_flags_vertical = 3
+theme = SubResource("Theme_dpge2")
+theme_type_variation = &"FlatButton"
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_nsoce")
+theme_override_styles/hover = SubResource("StyleBoxFlat_78rqu")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_5wbha")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_5kqlt")
+text = "exit"
+
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/exit" to="." method="_on_exit_pressed"]

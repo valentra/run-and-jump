@@ -1,0 +1,42 @@
+[gd_scene load_steps=5 format=3 uid="uid://ophmalcafrwg"]
+
+[ext_resource type="Script" path="res://scenes/PathFollow2D.gd" id="1_sqd6m"]
+
+[sub_resource type="Curve2D" id="Curve2D_wxhos"]
+_data = {
+"points": PackedVector2Array(-3, -29, 0, 0, 762, 135, 0, 0, 0, 0, 763, 270, 0, 0, 0, 0, 1054, 270, 0, 0, 0, 0, 762, 135)
+}
+point_count = 4
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_wl8qe"]
+load_path = "res://.godot/imported/Terrain (16x16).png-08440d825000be5cd6a24cdf2c2e8ddf.ctex"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fp6xw"]
+size = Vector2(78.8935, 9.99626)
+
+[node name="Path2D" type="Path2D"]
+curve = SubResource("Curve2D_wxhos")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="."]
+position = Vector2(762, 135)
+rotation = 1.60146
+rotates = false
+script = ExtResource("1_sqd6m")
+
+[node name="StaticBody2D" type="CharacterBody2D" parent="PathFollow2D"]
+rotation = 1.53938
+
+[node name="Sprite2D" type="Sprite2D" parent="PathFollow2D/StaticBody2D"]
+z_as_relative = false
+scale = Vector2(1.69565, 2.5)
+texture = SubResource("CompressedTexture2D_wl8qe")
+region_enabled = true
+region_rect = Rect2(272.747, 16.6882, 46.6416, 4.01355)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PathFollow2D/StaticBody2D"]
+position = Vector2(0, 0.000366211)
+shape = SubResource("RectangleShape2D_fp6xw")
+
+[node name="_Timer_96551" type="Timer" parent="PathFollow2D"]
+wait_time = 0.2
+one_shot = true
