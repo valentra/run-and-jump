@@ -41,13 +41,13 @@ jump over traps, and reach the finish flag to win each level!
 
 ## 📁 Project Structure
 
-run-and-jump/
-├── assets/ # All images, sprites, fonts.
-├── scenes/ # Godot scenes (.tscn) for levels, menu, characters
-├── scripts/ # GDScript files controlling gameplay and logic
-├── .gitattributes # Git configuration
-├── .gitignore # Ignored files and folders
-└── project.godot # Main Godot project file
+    run-and-jump/
+    ├── assets/           # All images, sprites, fonts
+    ├── scenes/           # Godot scenes (.tscn) for levels, menu, characters
+    ├── scripts/          # GDScript files controlling gameplay and logic
+    ├── .gitattributes    # Git configuration
+    ├── .gitignore        # Ignored files and folders
+    └── project.godot     # Main Godot project file
 
 ---
 
