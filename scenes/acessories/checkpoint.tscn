@@ -1,6 +1,6 @@
 [gd_scene load_steps=17 format=3 uid="uid://csop5lci0abog"]
 
-[ext_resource type="Script" path="res://scripts/static_body_2d.gd" id="1_ptw3o"]
+[ext_resource type="Script" path="res://scripts/checkpoint.gd" id="1_ptw3o"]
 [ext_resource type="Texture2D" uid="uid://b7kmxxhm4mphb" path="res://assets/Checkpoint (Flag Idle)(64x64).png" id="1_uk2n1"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lnblw"]

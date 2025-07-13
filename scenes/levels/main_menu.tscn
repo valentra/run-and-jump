@@ -1,8 +1,8 @@
 [gd_scene load_steps=12 format=3 uid="uid://dokwgltudxcgv"]
 
-[ext_resource type="Script" path="res://scripts/main_menu.gd" id="1_ku4g7"]
-[ext_resource type="Texture2D" uid="uid://ba7xuwu0r6ah3" path="res://assets/Green.png" id="1_uv5ep"]
-[ext_resource type="FontFile" uid="uid://m0psnb8l17vf" path="res://assets/Orange Gummy.ttf" id="2_nx5yo"]
+[ext_resource type="Script" path="res://scripts/main_menu.gd" id="1_5k8p2"]
+[ext_resource type="Texture2D" uid="uid://ba7xuwu0r6ah3" path="res://assets/Green.png" id="2_c8826"]
+[ext_resource type="FontFile" uid="uid://m0psnb8l17vf" path="res://assets/Orange Gummy.ttf" id="3_uxvmm"]
 
 [sub_resource type="Theme" id="Theme_dpge2"]
 
@@ -62,7 +62,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_ku4g7")
+script = ExtResource("1_5k8p2")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 texture_filter = 1
@@ -72,7 +72,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_uv5ep")
+texture = ExtResource("2_c8826")
 stretch_mode = 1
 
 [node name="Label" type="Label" parent="."]
@@ -96,7 +96,7 @@ theme_override_constants/shadow_offset_y = 2
 theme_override_constants/outline_size = 5
 theme_override_constants/shadow_outline_size = 2
 theme_override_constants/line_spacing = 2
-theme_override_fonts/font = ExtResource("2_nx5yo")
+theme_override_fonts/font = ExtResource("3_uxvmm")
 theme_override_font_sizes/font_size = 100
 text = "main menu"
 

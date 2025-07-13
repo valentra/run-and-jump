@@ -2,8 +2,8 @@
 
 [ext_resource type="Texture2D" uid="uid://cg0xbhx7e1wk" path="res://assets/Blue.png" id="1_x8s1u"]
 [ext_resource type="TileSet" uid="uid://c7p0pse6apu6b" path="res://assets/main.tres" id="2_ac722"]
-[ext_resource type="PackedScene" uid="uid://dtiba6ya0f8g0" path="res://scenes/main_character.tscn" id="3_lhlj3"]
-[ext_resource type="PackedScene" uid="uid://csop5lci0abog" path="res://scenes/static_body_2d.tscn" id="4_y4k3x"]
+[ext_resource type="PackedScene" uid="uid://dtiba6ya0f8g0" path="res://scenes/acessories/main_character.tscn" id="3_lhlj3"]
+[ext_resource type="PackedScene" uid="uid://csop5lci0abog" path="res://scenes/acessories/checkpoint.tscn" id="4_y4k3x"]
 
 [node name="world _3" type="Node2D"]
 
