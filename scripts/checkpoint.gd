@@ -1,13 +1,13 @@
 extends StaticBody2D
 
 @onready var sprite_2d = $Sprite2D
-
+#checkpoint animation
 func checka():
 	$Sprite2D.play("default")
-	
-func _ready():
-	if Global.current_world == "main":
-		Global.level_timer = 0
+
+#func _ready():
+	#if Global.current_world == "main":
+		#Global.level_timer = 0
 
 var change=false
 

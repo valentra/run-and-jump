@@ -157,4 +157,3 @@ theme_override_styles/focus = SubResource("StyleBoxEmpty_5kqlt")
 
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/exit" to="." method="_on_exit_pressed"]
-[connection signal="pressed" from="VBoxContainer/BestTimeLabel" to="." method="_on_exit_pressed"]

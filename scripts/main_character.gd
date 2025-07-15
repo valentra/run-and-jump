@@ -45,13 +45,13 @@ func _input(event):
 		
 	
 func _ready():
-	# Automatically start the timer if we're in the first level
-	if Global.current_world == "main":  # Or "world_1" depending on your setup
-		Global.start_timer()
+	if Global.current_world == "main" && Global.timer_running==false: 
+			Global.start_timer()
+
 
 func _process(_delta):
 	if Global.timer_running:
 		var t = int(Global.level_timer)
-		var minutes = t / 60
-		var seconds = t % 60
-		$HUDLayer/TimerLabel.text = "Time: %02d:%02d" % [minutes, seconds]
+		var m = t / 60
+		var sec = t % 60
+		$HUDLayer/TimerLabel.text = "Time: %02d:%02d" % [m, sec]
