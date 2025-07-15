@@ -142,5 +142,19 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_5wbha")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_5kqlt")
 text = "exit"
 
+[node name="BestTimeLabel" type="Button" parent="VBoxContainer"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+size_flags_vertical = 3
+theme = SubResource("Theme_dpge2")
+theme_type_variation = &"FlatButton"
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_nsoce")
+theme_override_styles/hover = SubResource("StyleBoxFlat_78rqu")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_5wbha")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_5kqlt")
+
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="VBoxContainer/BestTimeLabel" to="." method="_on_exit_pressed"]

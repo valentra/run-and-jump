@@ -1,9 +1,10 @@
-[gd_scene load_steps=30 format=3 uid="uid://dtiba6ya0f8g0"]
+[gd_scene load_steps=31 format=3 uid="uid://dtiba6ya0f8g0"]
 
 [ext_resource type="Script" path="res://scripts/main_character.gd" id="1_kptjs"]
 [ext_resource type="Texture2D" uid="uid://d16wnt2ittig1" path="res://assets/Idle (32x32).png" id="2_xiys1"]
 [ext_resource type="Texture2D" uid="uid://ddow4ivuyw7tq" path="res://assets/Jump (32x32).png" id="3_kf0fr"]
 [ext_resource type="Texture2D" uid="uid://co07pmfvd3310" path="res://assets/Run (32x32).png" id="4_voh6m"]
+[ext_resource type="FontFile" uid="uid://m0psnb8l17vf" path="res://assets/Orange Gummy.ttf" id="5_boffx"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_a5plc"]
 atlas = ExtResource("2_xiys1")
@@ -206,3 +207,24 @@ autoplay = "default"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(2.33333, 10.3333)
 shape = SubResource("CapsuleShape2D_acm57")
+
+[node name="HUDLayer" type="CanvasLayer" parent="."]
+
+[node name="TimerLabel" type="Label" parent="HUDLayer"]
+anchors_preset = -1
+anchor_bottom = 0.018
+offset_left = 501.0
+offset_top = 94.0
+offset_right = 671.0
+offset_bottom = 152.336
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 0.321569, 0.419608, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 5
+theme_override_constants/shadow_outline_size = 2
+theme_override_constants/line_spacing = 2
+theme_override_fonts/font = ExtResource("5_boffx")
+theme_override_font_sizes/font_size = 25

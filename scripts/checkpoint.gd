@@ -4,7 +4,10 @@ extends StaticBody2D
 
 func checka():
 	$Sprite2D.play("default")
-
+	
+func _ready():
+	if Global.current_world == "main":
+		Global.level_timer = 0
 
 var change=false
 
@@ -52,6 +55,8 @@ func area_change():
 		print("Current world not found in level_order:", Global.current_world)
 
 func _change_scene_and_update_world(scene_path: String, new_world: String):
+	if Global.current_world == "world_5":
+		Global.stop_timer()
 	Global.current_world = new_world
 	print(Global.current_world)
 	get_tree().change_scene_to_file(scene_path)
