@@ -27,7 +27,7 @@ var level_order = [
 	"world_3",
 	"world_4",
 	"world_5",
-	
+	"world_6"
 ]
 
 var level_paths = {
@@ -35,8 +35,8 @@ var level_paths = {
 	"world_2": "res://scenes/levels/world__3.tscn",
 	"world_3": "res://scenes/levels/world_4.tscn",
 	"world_4": "res://scenes/levels/world_5.tscn",
-	"world_5": "res://scenes/levels/main_menu.tscn",
-	
+	"world_5": "res://scenes/levels/world_6.tscn",
+	"world_6": "res://scenes/levels/main_menu.tscn"
 }
 
 func area_change():
@@ -55,7 +55,7 @@ func area_change():
 		print("Current world not found in level_order:", Global.current_world)
 
 func _change_scene_and_update_world(scene_path: String, new_world: String):
-	if Global.current_world == "world_5":
+	if Global.current_world == "world_6":
 		Global.stop_timer()
 	Global.current_world = new_world
 	print(Global.current_world)
