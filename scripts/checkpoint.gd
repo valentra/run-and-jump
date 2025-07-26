@@ -57,7 +57,7 @@ func area_change():
 		print("Current world not found in level_order:", Global.current_world)
 
 func _change_scene_and_update_world(scene_path: String, new_world: String):
-	if Global.current_world == "world_6":
+	if Global.current_world == "world_7":
 		Global.stop_timer()
 	Global.current_world = new_world
 	print(Global.current_world)
