@@ -27,7 +27,8 @@ var level_order = [
 	"world_3",
 	"world_4",
 	"world_5",
-	"world_6"
+	"world_6",
+	"world_7"
 ]
 
 var level_paths = {
@@ -36,7 +37,8 @@ var level_paths = {
 	"world_3": "res://scenes/levels/world_4.tscn",
 	"world_4": "res://scenes/levels/world_5.tscn",
 	"world_5": "res://scenes/levels/world_6.tscn",
-	"world_6": "res://scenes/levels/main_menu.tscn"
+	"world_6": "res://scenes/levels/world_7.tscn",
+	"world_7": "res://scenes/levels/main_menu.tscn"
 }
 
 func area_change():
