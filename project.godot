@@ -13,6 +13,7 @@ config_version=5
 config/name="run&jump"
 run/main_scene="res://scenes/levels/main_menu.tscn"
 config/features=PackedStringArray("4.2")
+config/icon="res://assets/Untitled design.png"
 
 [autoload]
 
