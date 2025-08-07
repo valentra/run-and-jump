@@ -16,10 +16,11 @@ jump over traps, and reach the finish flag to win each level!
 
 ## 📸 Screenshots
 
-<img width="1146" height="639" alt="image" src="https://github.com/user-attachments/assets/29db8e80-3846-490a-928a-02769c6ff0d8" />
+<img width="1149" height="644" alt="image" src="https://github.com/user-attachments/assets/250a90bd-4948-4eba-bc04-9b0ce1ec7555" />
 
-<img width="1757" height="950" alt="image" src="https://github.com/user-attachments/assets/bc402ef7-499c-475e-bb24-46e7994d2cb1" />
-<img width="1757" height="992" alt="image" src="https://github.com/user-attachments/assets/b2c1277f-8476-4e05-ac6b-c1fd5c149d46" />
+<img width="1150" height="643" alt="image" src="https://github.com/user-attachments/assets/d1c0dde4-e068-4c02-9bc2-3f88c7c516c7" />
+<img width="1148" height="624" alt="image" src="https://github.com/user-attachments/assets/904d13b7-deed-4ca1-9716-bc064f1ebed4" />
+
 
 ---
 
