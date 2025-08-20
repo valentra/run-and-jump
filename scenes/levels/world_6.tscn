@@ -45,7 +45,8 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "press [r] to retry"
 
 [node name="trap" parent="." instance=ExtResource("5_2rgw1")]
-position = Vector2(564, 482)
+position = Vector2(557, 481)
+scale = Vector2(0.7, 0.7)
 
 [node name="trap2" parent="." instance=ExtResource("5_2rgw1")]
 position = Vector2(951, 386)

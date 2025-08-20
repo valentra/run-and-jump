@@ -46,20 +46,21 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "press [r] to retry"
 
 [node name="trap" parent="." instance=ExtResource("6_fv6do")]
-position = Vector2(455, 401)
-scale = Vector2(1.07, 1)
+position = Vector2(442, 402)
+scale = Vector2(0.749, 0.7)
 
 [node name="Path2D" parent="." instance=ExtResource("5_x3304")]
 position = Vector2(-77, -18)
 scale = Vector2(0.996599, 0.93125)
 
 [node name="trap2" parent="." instance=ExtResource("6_fv6do")]
-position = Vector2(495, 401)
+position = Vector2(505, 402)
+scale = Vector2(0.7, 0.7)
 
 [node name="trap3" parent="." instance=ExtResource("6_fv6do")]
-position = Vector2(1140, 351)
+position = Vector2(1152, 351)
 
 [node name="trap4" parent="." instance=ExtResource("6_fv6do")]
-position = Vector2(405, 252)
-scale = Vector2(0.75, 0.75)
+position = Vector2(407, 253)
+scale = Vector2(0.7, 0.7)
 skew = 0.0244346
